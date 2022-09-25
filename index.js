@@ -16,8 +16,7 @@ require('dotenv').config();
             return response.data.items;
         })
         .catch((error) => {
-            console.log(error);
-            console.log("Error fetching users: Please check that .env file is set up correctly with your github token");
+            console.log("Error:", error.status, error.message);
         });
-    if (debug) console.log(users.length);
+    if (users && debug) console.log(users.length);
 })();
