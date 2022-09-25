@@ -8,7 +8,7 @@ require('dotenv').config();
     const debug = true;
     const users = await octokit
         .request("GET /search/users", {
-            q: "location:uganda",
+            q: "location:"+process.env.LOCATION,
             // Set the number of users to retrieve
             per_page: 100,
         })
