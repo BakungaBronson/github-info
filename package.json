@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/BakungaBronson/github-info#readme",
   "dependencies": {
-    "@octokit/core": "^4.0.5"
+    "@octokit/core": "^4.0.5",
+    "dotenv": "^16.0.2"
   }
 }
